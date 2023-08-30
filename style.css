@@ -157,7 +157,10 @@ body {
 		position: relative;
 		left: -8px;
 	}
-
+	
+         .img2{
+		z-index: -1;
+	}
 }
 
 @media screen and (max-width:768px) and (min-width:576px) {
@@ -197,10 +200,13 @@ body {
 		grid-template-columns: repeat(2, 1fr);
 		/* gap: 20px; */
 		gap: 20px;
+		
 	}
-   
+
 	.lk i{
 		margin-left: 20px;
 	}
- 
+         .img2{
+		z-index: -1;
+	}
 }
