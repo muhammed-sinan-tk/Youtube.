@@ -139,6 +139,9 @@ body {
 		margin: 1px;
 		font-size: 12px;
 	}
+		.auto::-webkit-scrollbar{
+		display: none;
+	}
 
 	.home {
 		display: none;
