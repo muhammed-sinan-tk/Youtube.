@@ -127,8 +127,8 @@ body {
 	.auto {
 		display: flex;
 		overflow-x: auto;
-		width: 100%;
-		margin-left: -8px;
+		width: 420px;
+		margin-left: -50px;
 		z-index: 1;
 	}
 
