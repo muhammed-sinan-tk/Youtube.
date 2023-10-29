@@ -34,6 +34,8 @@ body {
 	background-color: white;
 }
 
+
+
 .auto a {
 	margin-left: 10px;
 	text-decoration: none;
@@ -52,7 +54,7 @@ body {
 
 .home {
 	font-size: 25px;
-	width: 240px;
+	width: 220px;
 	padding: 2px;
 	line-height: 60px;
 	position: relative;
@@ -60,11 +62,12 @@ body {
 	overflow-y: auto;
 	height: 100%;
 	position: fixed;
-}
-.home::-webkit-scrollbar{
-	display: none;
+	background-color: azure;
 }
 
+.home::-webkit-scrollbar {
+	display: none;
+}
 
 /* .img1 p{
 	margin-top: -24px;
@@ -79,6 +82,7 @@ body {
 	/* box-shadow: 0px 5px 3px rgba(0,0,0,0,0.1); */
 	/* width: 900px; */
 }
+
 
 .img3:hover {
 	transform: scale(1.04);
@@ -106,7 +110,37 @@ body {
 } */
 
 
-@media screen and (max-width:576px) {
+.photo-you img {
+	width: 30px;
+	height: 30px;
+	border: 3px solid black;
+	border-radius: 100%;
+}
+
+.plus {
+	/* display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding: 20px; */
+	display: none;
+}
+
+.plus p {
+	font-size: 13px;
+}
+
+/* .h {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	top: 40px;
+	background-color: beige;
+	height: 80px;
+} */
+
+@media screen and (max-width:650px) {
 	.jk input {
 		display: none;
 	}
@@ -132,15 +166,16 @@ body {
 		z-index: 1;
 	}
 
+	.auto::-webkit-scrollbar {
+		display: none;
+	}
+
 	.auto a {
 		height: 35px;
 		padding: 10px;
 		white-space: nowrap;
 		margin: 1px;
 		font-size: 12px;
-	}
-		.auto::-webkit-scrollbar{
-		display: none;
 	}
 
 	.home {
@@ -155,19 +190,38 @@ body {
 
 	}
 
-	.li i{
+	.li i {
 		position: relative;
 		left: -10px;
 	}
 
-	.img2 img{
+	.img2 img {
 		position: relative;
 		left: -8px;
+
 	}
-	
-         .img2{
+
+	.img2 {
 		z-index: -1;
 	}
+
+	.plus {
+		display: block;
+	}
+
+	.h {
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		padding: 10px;
+		position: absolute;
+		top: 586px;
+		background-color: whitesmoke;
+		height: 80px;
+		position: fixed;
+        width: 100%;
+	}
+
 }
 
 @media screen and (max-width:768px) and (min-width:576px) {
@@ -191,6 +245,11 @@ body {
 		white-space: nowrap;
 	}
 
+	.auto::-webkit-scrollbar {
+		display: none;
+	}
+
+
 	.row {
 		margin-left: -20px;
 		/* display: flex;
@@ -207,13 +266,10 @@ body {
 		grid-template-columns: repeat(2, 1fr);
 		/* gap: 20px; */
 		gap: 20px;
-		
 	}
 
-	.lk i{
+	.lk i {
 		margin-left: 20px;
 	}
-         .img2{
-		z-index: -1;
-	}
+
 }
