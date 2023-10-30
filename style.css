@@ -53,13 +53,13 @@ body {
 }
 
 .home {
-	font-size: 25px;
-	width: 220px;
-	padding: 2px;
+	font-size: 20px;
+	width: 16%;
+	padding: 4px;
 	line-height: 60px;
 	position: relative;
 	top: 70px;
-	overflow-y: auto;
+	overflow-y: scroll;
 	height: 100%;
 	position: fixed;
 	background-color: azure;
@@ -96,8 +96,9 @@ body {
 
 .HK:hover {
 	background-color: bisque;
-	width: 300px;
+	width: 150px;
 	border-radius: 10px;
+	padding: 6px 4px;
 }
 
 .img1 img {
@@ -161,9 +162,10 @@ body {
 	.auto {
 		display: flex;
 		overflow-x: auto;
-		width: 420px;
-		margin-left: -50px;
+		width: 100%;
+		margin-left: -10px;
 		z-index: 1;
+		background-color: beige;
 	}
 
 	.auto::-webkit-scrollbar {
@@ -173,9 +175,11 @@ body {
 	.auto a {
 		height: 35px;
 		padding: 10px;
+		width: 100%;
 		white-space: nowrap;
 		margin: 1px;
 		font-size: 12px;
+		width: 100%;
 	}
 
 	.home {
@@ -209,19 +213,20 @@ body {
 		display: block;
 	}
 
-		.h {
+	.h {
 		display: flex;
 		justify-content: space-between;
 		text-align: center;
 		padding: 8px 20px;
-		position: absolute;
-		top: 596px;
+		position: relative;
+		top: 90%;
+		height: 20px;
 		background-color: whitesmoke;
 		height: 80px;
 		position: fixed;
-        width: 100%;
+		width: 100%;
+		/* overflow-x: hidden; */
 	}
-
 
 }
 
