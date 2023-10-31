@@ -277,5 +277,24 @@ body {
 	.lk i {
 		margin-left: 20px;
 	}
+  	.plus {
+		display: block;
+	}
+
+	.h {
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		padding: 8px 20px;
+		position: relative;
+		top: 82%;
+		height: 20px;
+		background-color: whitesmoke;
+		height: 80px;
+		position: fixed;
+		width: 100%;
+		/* overflow-x: hidden; */
+	}
+
 
 }
